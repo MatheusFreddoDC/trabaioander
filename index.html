@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MusicSpace</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-dark bg-black">
+        <div class="container">
+            <a class="navbar-brand" href="#">MusicSpace</a>
+
+            <div class="dropdown">
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                    Menu
+                </button>
+
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Início</a></li>
+                    <li><a class="dropdown-item" href="#artistas">Artistas</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container text-center mt-5">
+
+        <h1 class="text-info">Bem-vindo ao MusicSpace</h1>
+        <p class="lead">Descubra novos artistas e músicas!</p>
+
+        <div class="alert alert-info">
+            Confira nossos estilos musicais favoritos!
+        </div>
+
+        <div id="meuCarousel" class="carousel slide mb-5" data-bs-ride="carousel">
+
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=800"
+                    class="d-block w-100" alt="Cantor">
+                </div>
+
+                <div class="carousel-item">
+                    <img src="https://images.unsplash.com/photo-1506157786151-b8491531f063?w=800"
+                    class="d-block w-100" alt="Show">
+                </div>
+
+            </div>
+
+            <button class="carousel-control-prev" data-bs-target="#meuCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" data-bs-target="#meuCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+
+        <h2 id="artistas" class="mb-4">Estilos musicais</h2>
+
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+
+            <div class="card bg-secondary text-white" style="width: 15rem;">
+                <img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=500"
+                class="card-img-top" alt="Rock">
+
+                <div class="card-body">
+                    <h5 class="card-title">Rock</h5>
+                    <p class="card-text">Músicas cheias de energia.</p>
+                    <button class="btn btn-info">Ver mais</button>
+                </div>
+            </div>
+
+            <div class="card bg-secondary text-white" style="width: 15rem;">
+                <img src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?w=500"
+                class="card-img-top" alt="Pop">
+
+                <div class="card-body">
+                    <h5 class="card-title">Pop</h5>
+                    <p class="card-text">Grandes sucessos musicais.</p>
+                    <button class="btn btn-info">Ver mais</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="my-5">
+            <button class="btn btn-outline-light">Conhecer músicas</button>
+        </div>
+
+    </div>
+
+    <footer class="bg-black text-center p-3">
+        <p class="mb-0">MusicSpace - 2026</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
